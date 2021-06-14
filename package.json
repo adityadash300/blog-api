@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "name": "graphql-basics",
+  "version": "1.0.0",
+  "description": "Basics understanding of GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon src/index.js -e js,graphql",
+    "get-schema": "graphql get-schema -p prisma"
+  },
+  "author": "Aditya Dash",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "graphql-cli": "^2.16.4",
+    "graphql-yoga": "^1.14.10",
+    "jsonwebtoken": "^8.5.1",
+    "prisma-binding": "^2.1.1"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.7"
+  }
+}
